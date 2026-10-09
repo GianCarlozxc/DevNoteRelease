@@ -1,24 +1,27 @@
-# DevNote 1.0.0
+# DevNote 1.1.0
 
-First Windows desktop release of DevNote.
+DevNote now supports updates from inside the Windows app.
 
-- Create app-only notes and organize them into collections.
-- App Library lists each collection once; its notes appear together in the sidebar.
-- Keep unsaved drafts when switching notes and save all before closing.
-- Add, check, uncheck, and remove checklist items. Checkboxes scroll together with the text.
-- Set date and time reminders with a custom calendar and desktop notifications.
-- Choose six typing styles with adaptive typing speed sensitivity and a live preview.
-- Black and light themes, font size, word wrap, search, and keyboard shortcuts.
-- DevNote window, taskbar, browser, and reminder icons.
+- Settings includes **Check for updates**, an available-version message, and **Download update**.
+- Downloads show progress and are verified before installation.
+- **Restart to update** installs the downloaded update and relaunches DevNote.
+- Unsaved drafts must be saved before restarting. Normal app closes do not install updates automatically.
+- Notes, collections, reminders, and settings remain in the same AppData storage.
+- GitHub release metadata and installer block maps are included for future updates.
+
+## Install this version once
+
+Version 1.0.0 does not contain the updater. Install **DevNote-Setup-1.1.0-x64.exe** once to enable future in-app updates. Source development mode does not update itself; use the packaged Windows app.
 
 ## Downloads
 
-- **DevNote-Setup-1.0.0-x64.exe**: Windows x64 installer.
-- **DevNote-1.0.0-windows-x64.zip**: extract the entire ZIP, then run DevNote.exe. Keep its support files together.
-- **SHA256SUMS.txt**: checksums for the installer and portable ZIP.
+- **DevNote-Setup-1.1.0-x64.exe**: Windows x64 installer, recommended for in-app updates.
+- **DevNote-1.1.0-windows-x64.zip**: extract the entire ZIP, then run DevNote.exe.
+- **SHA256SUMS.txt**: download checksums.
+- **latest.yml** and the installer **.blockmap**: files used by the in-app updater.
 
-Notes remain in the app's local AppData storage. Keep DevNote running or minimized for timely reminders; overdue reminders are delivered on the next launch. This release is not digitally signed.
+Keep the app running or minimized for reminders. This release is not digitally signed.
 
-Source is maintained separately in the private repository: https://github.com/GianCarlozxc/DevNote
+Source: https://github.com/GianCarlozxc/DevNote (private).
 
-Validation: backend tests, desktop interaction checks, and checks against the packaged Windows app.
+Validation: backend and updater state tests, desktop interaction checks, and checks against the packaged Windows app. Restart tests use a simulated updater to verify saving drafts without installing test updates on the PC.

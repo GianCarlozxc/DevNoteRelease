@@ -12,4 +12,4 @@ Run the installer, or extract the entire portable ZIP and run DevNote.exe. Keep 
 
 Your notes stay in DevNote's local AppData storage. Keep the app running or minimized for scheduled reminders. This release is not digitally signed.
 
-See [release notes](RELEASE_NOTES.md) for features and validation. Application source is maintained separately in the private [DevNote repository](https://github.com/GianCarlozxc/DevNote), tagged v1.0.0. Source commit: cfeed1e.
+See [release notes](RELEASE_NOTES.md) for features and validation. Application source is maintained separately in the private [DevNote repository](https://github.com/GianCarlozxc/DevNote), tagged v1.0.0-release. Source commit: 88dadb7.

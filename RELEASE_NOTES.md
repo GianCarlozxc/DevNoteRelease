@@ -1,17 +1,18 @@
-# DevNote 1.2.0
+# DevNote 1.3.0
 
-The editor's Checkbox button now opens a list-style dropdown.
+Rename your notes and collections, and manage more flexible reminders.
 
-- Choose Checkbox, Numbered list, or Bulleted list.
-- Format the current line or selected lines, and convert between list styles.
-- Press Enter to continue a list; numbered items increment automatically.
-- Press Enter on an empty item to end the list.
-- Existing notes, checkbox states, and settings are preserved.
+- Right-click a sidebar note or a collection in App Library to rename it.
+- Rename collections without changing their notes, unsaved drafts, or reminders.
+- Set one-time, daily, weekly, or monthly reminders.
+- Snooze an in-app reminder for 5, 10, 30, or 60 minutes.
+- Open the toolbar's Reminders list to view upcoming and overdue reminders, edit their schedules, or remove them.
+- Missed recurring reminders produce one alert on return and continue at the next scheduled date. Monthly reminders use the last day of shorter months when needed.
 
-To update when you are ready, use Settings, Check for updates, Download update, and Restart to update. Unsaved drafts are saved before restarting.
+Keep DevNote running or minimized for timely reminders. Your existing notes and settings remain in the same local storage.
 
-Downloads include the Windows x64 installer, portable ZIP, checksums, and updater metadata. Version 1.0.0 users need to install the new installer once to enable in-app updates. This release is not digitally signed.
+Downloads include the Windows x64 installer, portable ZIP, checksums, and in-app updater metadata. This release is not digitally signed.
+
+Tests and application runtime checks were not run, as requested. This release is provided for manual testing. Preparing this release does not install the update or restart the desktop app.
 
 Source: https://github.com/GianCarlozxc/DevNote (private).
-
-Validation: 17 automated tests, packaged desktop interaction checks, and the live GitHub updater feed. No installed desktop app is updated during release preparation.
